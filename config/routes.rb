@@ -8,7 +8,7 @@ Flitter::Application.routes.draw do
   match 'login' => 'sessions#new', :as => :login
 
   resources :sessions
-
+  resources :flits
   resources :users
 
   root :to => 'home#index'
